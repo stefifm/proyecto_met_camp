@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Pelis App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Pelis App</h1>
+            <ul>
+                <li><a href="#agregar">Agregar película</a></li>
+                <li><a href="#peliculas">Películas</a></li>
+                <li><a href="#favoritos">Favoritas</a></li>
+                <li><a href="#home">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <div class="main-container">
+                <h2>Destacado</h2>
+                <div id="izquierda">
+                    <h3>Título</h3>
+                    <p>Frozen</p>
+                    <h4>Género</h4>
+                    <p>Animada</p>
+                    <div id="descripcion-destacado">
+                        <h4>Descripción</h4>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi unde architecto quod laborum quo! Debitis aliquid iure nobis eos, accusamus placeat repellat inventore quos voluptatem porro omnis odio ea fugiat!</p>
+                    </div>
+                    <h4>Calificación</h4>
+                    <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                </div>
+                <div>
+                    <img class="poster" src="https://i.ytimg.com/vi/MdIDq6o4i-Y/movieposter.jpg" alt="Poster de Frozen">
+                </div>
+            </div>
+        </section>
+
+        <section id="favoritos">
+            <h2>Favoritos</h2>
+            <div class="favoritos-container">
+                <div class="favorito">
+                    <div>
+                        <img class="poster" src="https://pics.filmaffinity.com/Frozen_2-725228283-large.jpg" alt="Tarjeta de Frozen 2">
+                    </div>
+                    <h3>Título</h3>
+                    <p>Frozen 2</p>
+                    <h4>Género</h4>
+                    <p>Fantasía</p>
+                </div>
+                <div class="favorito">
+                    <div>
+                        <img class="poster" src="https://pics.filmaffinity.com/Frozen_2-725228283-large.jpg" alt="Tarjeta de Frozen 2">
+                    </div>
+                    <h3>Título</h3>
+                    <p>Frozen 2</p>
+                    <h4>Género</h4>
+                    <p>Fantasía</p>
+                </div>
+                <div class="favorito">
+                    <div>
+                        <img class="poster" src="https://pics.filmaffinity.com/Frozen_2-725228283-large.jpg" alt="Tarjeta de Frozen 2">
+                    </div>
+                    <h3>Título</h3>
+                    <p>Frozen 2</p>
+                    <h4>Género</h4>
+                    <p>Fantasía</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="peliculas">
+            <h2>Películas</h2>
+            <h3>Lista de películas</h3>
+            <article class="peliculas">
+                <div class="peliculas-container">
+                    <div>
+                        <img class="poster" src="https://mx.web.img3.acsta.net/pictures/17/08/07/21/43/466493.jpg" alt="Poster de Intensamente">
+                    </div>
+                    <div class="derecha">
+                        <h3>Título</h3>
+                        <p>Intensamente</p>
+                        <h4>Género</h4>
+                        <p>Animada</p>
+                        <h4>Descripción</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae porro commodi maxime voluptate excepturi, voluptas non, et officia culpa quo praesentium? Nisi ipsam debitis placeat porro aut, adipisci libero.</p>
+                    </div>
+                </div>
+                <div class="peliculas-container">
+                    <div>
+                        <h4>Calificación</h4>
+                        <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                    </div>
+                    <div class="peliculas-botones">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                        <button onclick="cambioHTML()">Tercer botón</button>
+                    </div>
+                </div>
+            </article>
+            <article class="peliculas">
+                <div class="peliculas-container">
+                    <div>
+                        <img class="poster" src="https://mx.web.img3.acsta.net/pictures/17/08/07/21/43/466493.jpg" alt="Poster de Intensamente">
+                    </div>
+                    <div class="derecha">
+                        <h3>Título</h3>
+                        <p>Intensamente</p>
+                        <h4>Género</h4>
+                        <p>Animada</p>
+                        <h4>Descripción</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae porro commodi maxime voluptate excepturi, voluptas non, et officia culpa quo praesentium? Nisi ipsam debitis placeat porro aut, adipisci libero.</p>
+                    </div>
+                </div>
+                <div class="peliculas-container">
+                    <div>
+                        <h4>Calificación</h4>
+                        <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                    </div>
+                    <div class="peliculas-botones">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+            </article>
+            <article id="cambio" class="peliculas">
+                <div class="peliculas-container">
+                    <div>
+                        <img class="poster" src="https://mx.web.img3.acsta.net/pictures/17/08/07/21/43/466493.jpg" alt="Poster de Intensamente">
+                    </div>
+                    <div class="derecha">
+                        <h3>Título</h3>
+                        <p>Intensamente</p>
+                        <h4>Género</h4>
+                        <p>Animada</p>
+                        <h4>Descripción</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci molestiae porro commodi maxime voluptate excepturi, voluptas non, et officia culpa quo praesentium? Nisi ipsam debitis placeat porro aut, adipisci libero.</p>
+                    </div>
+                </div>
+                <div class="peliculas-container">
+                    <div>
+                        <h4>Calificación</h4>
+                        <p>&#9734;&#9734;&#9734;&#9734;&#9734;</p>
+                    </div>
+                    <div class="peliculas-botones">
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="agregar">
+            <form id="formulario">
+                <label for="titulo">Título</label>
+                <input class="info" type="text" name="titulo">
+                <label for="genero">Género</label>
+                <input class="info" type="text" name="genero">
+                <label for="descripcion">Descripción</label>
+                <textarea name="descripcion"></textarea>
+                <label for="calificacion">Calificación</label>
+                <input class="info" type="text" name="calificacion">
+                <button id="enviar" type="submit" onclick="agregarPeli()">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>Pelis App 2020</footer>
+</body>
+<script src="js/script.js"></script>
+</html>
